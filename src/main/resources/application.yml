@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  domain: http://a9mmnt.natappfree.cc
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dailyhub?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 12345678
+  freemarker:
+    suffix: .ftl
+    settings:
+      classic_compatible: true
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  redis:
+    port: 6379
+    host: localhost
+  elasticsearch:
+    uris: localhost:9200
+    username:
+    password:
+wx:
+  appID: wx2416b82a012bba38
+  appsecret: f6170e948acf45d569ce306f1d70516c
+  token: 123456
+
+
