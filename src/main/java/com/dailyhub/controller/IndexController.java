@@ -58,10 +58,12 @@ public class IndexController extends BaseController{
         return ApiResult.successResult(userCollects);
     }
 
-    @Login
+//    @Login
     @ResponseBody
     @PostMapping("/collects/delete")
-    public ApiResult deleteCollect(@RequestParam(name = "id") Long id){
+    //上面這種添加requestParam方式也可以
+//    public ApiResult deleteCollect(@RequestParam(name = "id") Long id){
+        public ApiResult deleteCollect(Long id){
         UserCollect collectById = userCollectService.getCollectById(id);
         Assert.notNull(collectById,"不存在此条数据");
         UserDto userInfo = (UserDto)request.getSession().getAttribute("userInfo");
