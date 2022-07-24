@@ -8,6 +8,7 @@ class MyhubApplicationTests {
 
     @Test
     public void test(){
+        System.out.println("11111111");
 
     }
 
